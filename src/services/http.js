@@ -2,7 +2,7 @@ import axios from "axios";
 
 //Creates an axios instance with the specified configuration
 const http = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: process.env.REACT_APP_CONTACT_ENDPOINT,
     headers: {
         "Content-type": "application/json; charset=UTF-8"
     }
